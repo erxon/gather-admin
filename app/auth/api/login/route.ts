@@ -1,8 +1,6 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from "next/server";
 
-
-
-export async function POST(request: Request){
-    const body = await request.json()
-    return NextResponse.json(body)
+export async function POST(req: Request){
+    const body = await req.json()
+    
 }
