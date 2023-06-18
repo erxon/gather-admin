@@ -21,8 +21,17 @@ export default function Form() {
     setFieldValues({ ...fieldValues, [name]: value });
   };
 
-  const handleSubmit = () => {
-    //API Call Here
+  const handleSubmit = async () => {
+    //API Call
+    const login = await fetch('/auth/api/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(fieldValues)
+    })
+    const response = await login.json()
+
+    console.log(response)
+    
     console.log(fieldValues)
   }
 
