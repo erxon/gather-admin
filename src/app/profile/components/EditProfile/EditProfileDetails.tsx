@@ -1,5 +1,5 @@
 import { Button, TextField, Typography, Box } from "@mui/material";
-import StackRowLayout from "@/app/components/StackRowLayout";
+import StackRowLayout from "@/src/app/components/StackRowLayout";
 import Layout from "./Layout";
 import React, { useState } from "react";
 

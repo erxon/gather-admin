@@ -6,7 +6,7 @@ import {
   InputAdornment,
   IconButton,
 } from "@mui/material";
-import StackRowLayout from "@/app/components/StackRowLayout";
+import StackRowLayout from "@/src/app/components/StackRowLayout";
 import Layout from "./Layout";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";

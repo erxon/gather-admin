@@ -1,5 +1,5 @@
 import { Stack, Typography, Chip, Box } from "@mui/material";
-import StackRowLayout from "@/app/components/StackRowLayout";
+import StackRowLayout from "@/src/app/components/StackRowLayout";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 

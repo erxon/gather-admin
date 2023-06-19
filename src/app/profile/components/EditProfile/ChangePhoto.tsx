@@ -2,7 +2,7 @@ import { Paper, Button, Typography, Box } from "@mui/material";
 import Layout from "./Layout";
 import ProfileAvatar from "../ProfileCard/ProfileAvatar";
 import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
-import StackRowLayout from "@/app/components/StackRowLayout";
+import StackRowLayout from "@/src/app/components/StackRowLayout";
 import React, { useState } from "react";
 
 export default function ChangePhoto(props: { publicId: string }) {

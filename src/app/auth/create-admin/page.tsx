@@ -1,6 +1,7 @@
 "use client";
 import { TextField, Box, Button } from "@mui/material";
 import { useState } from "react";
+import { createUser } from "../../utils/db/user";
 
 export default function Page() {
   const [values, setValues] = useState({
@@ -13,7 +14,7 @@ export default function Page() {
     setValues({ ...values, [name]: value });
   };
   const handleSubmit = async () => {
-    const createAdmin = await fetch("/auth/api/create-user", {
+    const createAdmin = await fetch("/api/create-admin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

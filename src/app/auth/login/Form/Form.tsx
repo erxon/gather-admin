@@ -7,7 +7,7 @@ import {
   Button,
   Divider,
 } from "@mui/material";
-import PasswordField from "@/app/components/PasswordField";
+import PasswordField from "@/src/app/components/PasswordField";
 import React, { useState } from "react";
 
 export default function Form() {
@@ -23,7 +23,7 @@ export default function Form() {
 
   const handleSubmit = async () => {
     //API Call
-    const login = await fetch('/auth/api/login', {
+    const login = await fetch('/api/login', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(fieldValues)
@@ -31,9 +31,9 @@ export default function Form() {
     const response = await login.json()
 
     console.log(response)
-    
-    console.log(fieldValues)
-  }
+
+    console.log(fieldValues);
+  };
 
   return (
     <Box>
@@ -65,7 +65,9 @@ export default function Form() {
         </Stack>
 
         {/*****************************************/}
-        <Button variant="contained" onClick={handleSubmit}>Login</Button>
+        <Button variant="contained" onClick={handleSubmit}>
+          Login
+        </Button>
       </Paper>
     </Box>
   );
